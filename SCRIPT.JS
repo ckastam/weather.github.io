@@ -97,5 +97,9 @@ function googleTranslateElementInit() {
                         }else if(mt<=15){
                           document.getElementById("result").innerHTML="It's going to be chilly today. Wear some warm clothes.";
                         }
-
+//autoload page
+		    function load()
+{
+setTimeout("window.open(self.location, '_self');", 300000);
+}
             };  
