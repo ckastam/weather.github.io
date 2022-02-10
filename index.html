@@ -8,8 +8,7 @@
               <body>
 			  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 			  <script src="SCRIPT.JS"></script>
-		      <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
-			   <style>
+		         <style>
 table, tr, th, td {
   border: 5px solid black;
   border-collapse: collapse;
@@ -61,10 +60,20 @@ table, tr, th, td {
 					</tbody>
 				</table>
 				</br>
-		      		<table width=1300px aligh=center>
+		      		<table> 
 				<tr>
-				<coingecko-coin-list-widget  coin-ids="bitcoin,ethereum,bitcoincashbinancecoin,litecoin,dash,solana,tron,dogecoin,shibainu,ripple,dot,alienworlds,internet-computer,polkadot" currency="usd" locale="en"></coingecko-coin-list-widget>
-				</tr></table>
+				<coingecko-coin-compare-chart-widget  coin-ids="bitcoin-cash,binancecoin" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+				</tr>
+				<tr>
+				<coingecko-coin-compare-chart-widget  coin-ids="litecoin,dash,solana,zcash" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+				</tr>
+				<tr>
+				<coingecko-coin-compare-chart-widget  coin-ids="internet-computer,polkadot,btc-standard-hashrate-token" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+				</tr>
+				<tr>
+				<coingecko-coin-compare-chart-widget  coin-ids="tron,dogecoin,alien-worlds" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+				</tr>
+				</table>
 		      		<table width=1300px align=center>
 				<tr>
 				<td><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div></td>
@@ -94,6 +103,6 @@ table, tr, th, td {
                 </table>
 				</center>
                 </div>
-               
+               <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
 			</body>
             </html>  
