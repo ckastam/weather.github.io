@@ -5,7 +5,7 @@
                 <meta name="viewport" content="width=device-width">
                 <link href="style.css" rel="stylesheet" type="text/css" />
               </head>
-              <body onload="load()">
+              <body>
 			  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 			  <script src="SCRIPT.JS"></script>
 		      <script src="https://widgets.coingecko.com/coingecko-coin-price-static-headline-widget.js"></script>
@@ -64,6 +64,16 @@ table, tr, th, td {
 					</tbody>
 				</table>
 				</br>
+		    			<form name="password_generate" style="margin:auto; width:400px; margin-top:100px;">
+ 
+<input type="text" size=18 name="output" autofocus="autofocus" style="font-family: cursive; text-align: center; color: blue; font-size: 20px; border: 1px solid blue; width: 182px; text-indent: 5px; background: azure;">
+<input type="button" value="Generate Password" onClick="execute_To_Generate(this.form.password_Length.value)" style="border-radius: 8px; color: red; background: azure; border: 1px solid red; font-size: 22px;">
+<br />
+<br />
+<b style="font-family:cursive; font-size:23px; color:blue;">Password Length:</b> <input type="text" name="password_Length" value="7"style="font-family: cursive; text-align: center; color: blue; font-size: 20px; border: 1px solid blue; width: 50px; background: azure;" readonly />
+ 
+</form>
+		    		</br>
 		      		<table> 
 				<tr>
 				<coingecko-coin-compare-chart-widget  coin-ids="bitcoin-cash,binancecoin" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
