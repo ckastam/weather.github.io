@@ -97,9 +97,10 @@ function googleTranslateElementInit() {
                         }else if(mt<=15){
                           document.getElementById("result").innerHTML="It's going to be chilly today. Wear some warm clothes.";
                         }
-		    var pattern_list="abcdefghijklmnopqrstuvwxyz123456789"
+	    };
+//password generator		    
+var pattern_list="!£$%^&*+-*abcdefghijklmnopqrstuvwxyz123456789"
 var example=''
- 
 function generate_password(plength){
 example=''
 for (i=0;i<plength;i++)
@@ -115,4 +116,3 @@ document.password_generate.output.value=generate_password(enterlength)
 {
 setTimeout("window.open(self.location, '_self');", 300000);
 }
-            };  
