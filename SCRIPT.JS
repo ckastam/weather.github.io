@@ -64,7 +64,7 @@ function googleTranslateElementInit() {
  		
 		document.getElementById("humidity").innerHTML = obj.main.humidity+"%";
                 document.getElementById("description").innerHTML = weather[i].description;
-                //iconshow(icon, mt)
+                
                 document.getElementById("mintemp").innerHTML = mt+"°C";
                 document.getElementById("maxtemp").innerHTML = obj.main.temp_max+"°C";
                 document.getElementById("wspdg").innerHTML = obj.wind.speed+"MPH | "+obj.wind.deg+"°";
@@ -74,6 +74,7 @@ function googleTranslateElementInit() {
 		document.getElementById("date").innerHTML = date;
 		var tempf = obj.main.temp*1.8+32;
 		document.getElementById("tempf").innerHTML = tempf.toFixed(2)+"°F";
+		iconshow(icon, mt)
 		
 		
 		 }
