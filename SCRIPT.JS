@@ -85,7 +85,7 @@ function googleTranslateElementInit() {
                         img.style.height = "40px";
                         document.getElementById('icon').appendChild(img);
                         if (temp>=19){
-                        document.getElementById("result").innerHTML="Hot Weather today. Drink some water";}
+                        document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
 		    	else if (15.1<temp<18){
 			document.getElementById("result").innerHTML="The weather is great. Drink some water";}		
 			else if(temp<=15){
