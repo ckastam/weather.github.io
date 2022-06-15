@@ -86,15 +86,10 @@ function googleTranslateElementInit() {
                         img.style.height = "40px";
                         document.getElementById('icon').appendChild(img);
                         if (mt>=20){
-                          document.getElementById("result").innerHTML="It's gonna be hot today.";
-                          chrome.notifications.create('hotoutside', {
-                          type: 'basic',
-                          title: 'Test Message',
-                          message: 'You are awesome!',
-                          priority: 2
-                          });
-                        }else if(mt<=15){
-                          document.getElementById("result").innerHTML="It's going to be chilly today. Wear some warm clothes.";
+                        document.getElementById("result").innerHTML="It's gonna be hot today.";
+                        }
+		    	else if(mt<=15){
+                        document.getElementById("result").innerHTML="It's going to be chilly today. Wear some warm clothes.";
                         }
 	    };
 //autoload page
