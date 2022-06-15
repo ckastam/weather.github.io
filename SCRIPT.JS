@@ -86,7 +86,7 @@ function googleTranslateElementInit() {
                         img.style.height = "40px";
                         document.getElementById('icon').appendChild(img);
                         if (mt>=20){
-                          document.getElementById("result").innerHTML="It's gonna be hot today. Bring some water wherever you go outside.";
+                          document.getElementById("result").innerHTML="It's gonna be hot today.";
                           chrome.notifications.create('hotoutside', {
                           type: 'basic',
                           iconUrl: 'images/1.png',
