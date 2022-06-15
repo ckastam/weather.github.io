@@ -88,7 +88,7 @@ function googleTranslateElementInit() {
                         if (mt>=20){
                         document.getElementById("result").innerHTML="Hot Weather today. Drink some water";}
 		    	else if (15.1<mt<19.9){
-			document.getElementById("result").innerHTML="The weather is great";}		
+			document.getElementById("result").innerHTML="The weather is great. Drink some water";}		
 			else if(mt<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
                         }
