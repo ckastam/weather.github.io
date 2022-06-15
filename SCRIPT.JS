@@ -89,7 +89,6 @@ function googleTranslateElementInit() {
                           document.getElementById("result").innerHTML="It's gonna be hot today.";
                           chrome.notifications.create('hotoutside', {
                           type: 'basic',
-                          iconUrl: 'images/1.png',
                           title: 'Test Message',
                           message: 'You are awesome!',
                           priority: 2
