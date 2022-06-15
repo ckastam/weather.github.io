@@ -64,7 +64,7 @@ function googleTranslateElementInit() {
  		
 		document.getElementById("humidity").innerHTML = obj.main.humidity+"%";
                 document.getElementById("description").innerHTML = weather[i].description;
-                //iconshow(icon, temp)
+                //iconshow(icon, mt)
                 document.getElementById("mintemp").innerHTML = mt+"°C";
                 document.getElementById("maxtemp").innerHTML = obj.main.temp_max+"°C";
                 document.getElementById("wspdg").innerHTML = obj.wind.speed+"MPH | "+obj.wind.deg+"°";
@@ -78,17 +78,17 @@ function googleTranslateElementInit() {
 		
 		 }
             };
-            function iconshow(icon, temp) {
+            function iconshow(icon,mt) {
                         var img = new Image();
                         img.src ='https://openweathermap.org/img/wn/'+icon+'@2x.png';
                         img.style.width = "40px";
                         img.style.height = "40px";
                         document.getElementById('icon').appendChild(img);
-                        if (temp>20){
+                        if (mt>20){
                         document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
-		    	else if (15.1<temp<19.9){
+		    	else if (15.1<mt<19.9){
 			document.getElementById("result").innerHTML="The weather is great.";}		
-			else if(temp<=15){
+			else if(mt<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
                         }
 	    };
