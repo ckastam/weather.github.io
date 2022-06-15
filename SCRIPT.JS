@@ -74,22 +74,22 @@ function googleTranslateElementInit() {
 		document.getElementById("date").innerHTML = date;
 		var tempf = obj.main.temp*1.8+32;
 		document.getElementById("tempf").innerHTML = tempf.toFixed(2)+"°F";
-		iconshow(icon, mt)
+		iconshow(icon, temp)
 		
 		
 		 }
             };
-            function iconshow(icon,mt) {
+            function iconshow(icon,temp) {
                         var img = new Image();
                         img.src ='https://openweathermap.org/img/wn/'+icon+'@2x.png';
-                        img.style.width = "140px";
-                        img.style.height = "140px";
+                        img.style.width = "60px";
+                        img.style.height = "60px";
                         document.getElementById('icon').appendChild(img);
-                        if (mt>=20){
+                        if (temp>=20){
                         document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
-		    	else if (15.1<mt<19.9){
-			document.getElementById("result").innerHTML="The weather is great.";}		
-			else if(mt<=15){
+		    	else if (15.1<temp<19.9){
+			document.getElementById("result").innerHTML="The weather is great!";}		
+			else if(temp<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
                         }
 	    };
