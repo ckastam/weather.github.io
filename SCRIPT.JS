@@ -78,18 +78,17 @@ function googleTranslateElementInit() {
 		
 		 }
             };
-            function iconshow(icon, mt) {
+            function iconshow(icon, temp) {
                         var img = new Image();
-                        img.src = 
-            'https://openweathermap.org/img/wn/'+icon+'@2x.png';
+                        img.src ='https://openweathermap.org/img/wn/'+icon+'@2x.png';
                         img.style.width = "40px";
                         img.style.height = "40px";
                         document.getElementById('icon').appendChild(img);
-                        if (mt>=20){
+                        if (temp>=20){
                         document.getElementById("result").innerHTML="Hot Weather today. Drink some water";}
-		    	else if (15.1<mt<19.9){
+		    	else if (15.1<temp<19.9){
 			document.getElementById("result").innerHTML="The weather is great. Drink some water";}		
-			else if(mt<=15){
+			else if(temp<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
                         }
 	    };
