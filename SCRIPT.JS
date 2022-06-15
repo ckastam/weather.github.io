@@ -84,7 +84,7 @@ function googleTranslateElementInit() {
                         //img.style.width = "40px";
                         //img.style.height = "40px";
                         //document.getElementById('icon').appendChild(img);
-                        if (temp>=20){
+                        if (temp>20){
                         document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
 		    	else if (15.1<temp<19.9){
 			document.getElementById("result").innerHTML="The weather is great.";}		
@@ -92,8 +92,8 @@ function googleTranslateElementInit() {
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
                         }
 	    };
-//autoload page
-//		    function load()
-//{
-//setTimeout("window.open(self.location, '_self');", 300000);
-//}
+autoload page
+		    function load()
+{
+setTimeout("window.open(self.location, '_self');", 300000);
+}
