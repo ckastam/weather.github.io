@@ -81,10 +81,10 @@ function googleTranslateElementInit() {
             function iconshow(icon,mt) {
                         var img = new Image();
                         img.src ='https://openweathermap.org/img/wn/'+icon+'@2x.png';
-                        img.style.width = "40px";
-                        img.style.height = "40px";
+                        img.style.width = "140px";
+                        img.style.height = "140px";
                         document.getElementById('icon').appendChild(img);
-                        if (mt>20){
+                        if (mt>=20){
                         document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
 		    	else if (15.1<mt<19.9){
 			document.getElementById("result").innerHTML="The weather is great.";}		
