@@ -60,7 +60,7 @@ function googleTranslateElementInit() {
               var mt = obj.main.temp_min;
               for (let i = 0; i < weather.length; i++) {
                 var icon = weather[i].icon;
-                document.getElementById("temp").innerHTML = obj.main.temp +"°C";
+                document.getElementById("temp").innerHTML = obj.main.temp+"°C";
  		
 		document.getElementById("humidity").innerHTML = obj.main.humidity+"%";
                 document.getElementById("description").innerHTML = weather[i].description;
@@ -84,9 +84,9 @@ function googleTranslateElementInit() {
                         img.style.width = "40px";
                         img.style.height = "40px";
                         document.getElementById('icon').appendChild(img);
-                        if (temp>=20){
+                        if (temp>=19){
                         document.getElementById("result").innerHTML="Hot Weather today. Drink some water";}
-		    	else if (15.1<temp<19.9){
+		    	else if (15.1<temp<18){
 			document.getElementById("result").innerHTML="The weather is great. Drink some water";}		
 			else if(temp<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
