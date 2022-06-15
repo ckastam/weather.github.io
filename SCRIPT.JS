@@ -84,9 +84,9 @@ function googleTranslateElementInit() {
                         img.style.width = "40px";
                         img.style.height = "40px";
                         document.getElementById('icon').appendChild(img);
-                        if (temp>=19){
+                        if (temp>=20){
                         document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
-		    	else if (15.1<temp<18){
+		    	else if (15.1<temp<19.9){
 			document.getElementById("result").innerHTML="The weather is great. Drink some water";}		
 			else if(temp<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
