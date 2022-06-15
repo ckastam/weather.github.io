@@ -92,8 +92,8 @@ function googleTranslateElementInit() {
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";
                         }
 	    };
-autoload page
-		    function load()
-{
-setTimeout("window.open(self.location, '_self');", 300000);
-}
+//autoload page
+		 //   function load()
+//{
+//setTimeout("window.open(self.location, '_self');", 300000);
+//}
