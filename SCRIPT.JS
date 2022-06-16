@@ -31,7 +31,7 @@ function googleTranslateElementInit() {
                     const code = error.code;
                     const message = error.message;
                     // read the code and message and decide how you want to handle this!
-                    document.getElementById('result').innerHTML = message;
+                    document.getElementById('result1').innerHTML = message;
                 }
 
                 navigator.geolocation.getCurrentPosition(locationSuccess, locationError);
