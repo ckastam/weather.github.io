@@ -90,8 +90,8 @@ function googleTranslateElementInit() {
                         document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
 		    	else if(tempg<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";}
-			else {
-			document.getElementById("result").innerHTML="The weather is great!";}	    
+			//else {
+			//document.getElementById("result").innerHTML="The weather is great!";}	    
 	    };
 //autoload page
 		 //   function load()
