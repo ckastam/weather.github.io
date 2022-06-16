@@ -58,6 +58,7 @@ function googleTranslateElementInit() {
 
               const weather = obj['weather'];
               var mt = obj.main.temp_min;
+		var tempg = obj.main.temp
               for (let i = 0; i < weather.length; i++) {
                 var icon = weather[i].icon;
                 document.getElementById("temp").innerHTML = obj.main.temp+"°C";
@@ -79,15 +80,15 @@ function googleTranslateElementInit() {
 		
 		 }
             };
-            function iconshow(icon,temp) {
+            function iconshow(icon,tempg) {
                         var img = new Image();
                         img.src ='https://openweathermap.org/img/wn/'+icon+'@2x.png';
                         img.style.width = "60px";
                         img.style.height = "60px";
                         document.getElementById('icon').appendChild(img);
-                        if (temp>=17){
+                        if (tempg>=17){
                         document.getElementById("result").innerHTML="The weather is hot. Drink some water";}
-		    	else if(temp<=15){
+		    	else if(tempg<=15){
                         document.getElementById("result").innerHTML="The weather is cold. Wear some warm clothes.";}
 			else {
 			document.getElementById("result").innerHTML="The weather is great!";}	    
