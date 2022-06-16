@@ -75,7 +75,7 @@ function googleTranslateElementInit() {
 		document.getElementById("date").innerHTML = date;
 		var tempf = obj.main.temp*1.8+32;
 		document.getElementById("tempf").innerHTML = tempf.toFixed(2)+"°F";
-		iconshow(icon, temp)
+		iconshow(icon, tempg)
 		
 		
 		 }
